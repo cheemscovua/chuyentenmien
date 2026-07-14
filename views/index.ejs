@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Thông báo: Thầy Toàn đã chuyển website học cờ vua từ covua.online sang covualogic.vn."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="<%= site.newUrl %>/" />
+    <meta property="og:title" content="<%= title %>" />
+    <meta
+      property="og:description"
+      content="Các bạn bấm vào đây để sang trang học cờ vua mới của Thầy Toàn."
+    />
+    <meta property="og:image" content="/assets/chess-mascot.png" />
+    <title><%= title %></title>
+    <link rel="preload" href="/assets/chess-mascot.png" as="image" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero" aria-labelledby="page-title">
+        <img
+          class="hero-art"
+          src="/assets/chess-mascot.png"
+          alt="Minh họa quân cờ đáng yêu đang chỉ sang trang mới"
+        />
+
+        <div class="hero-shade" aria-hidden="true"></div>
+
+        <div class="hero-copy">
+          <p class="eyebrow">Thông báo nhỏ từ lớp cờ vua</p>
+          <h1 id="page-title"><%= site.teacher %> đã chuyển sang nhà mới!</h1>
+          <p class="lead">
+            Trang <strong><%= site.oldDomain %></strong> nay chỉ dùng để nhắn các bạn
+            rằng lớp học đã chuyển sang <strong><%= site.newDomain %></strong>.
+          </p>
+
+          <div class="actions" aria-label="Liên kết sang website mới">
+            <a class="primary-link" href="<%= site.newUrl %>">
+              <span class="link-icon" aria-hidden="true">➜</span>
+              Bấm sang <%= site.newDomain %>
+            </a>
+            <a class="ghost-link" href="/di-den-trang-moi">
+              Đi bằng đường phụ
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="note-band" aria-label="Ghi chú">
+        <div class="note-inner">
+          <span class="piece" aria-hidden="true">♞</span>
+          <p>
+            Các bạn lưu lại địa chỉ mới:
+            <a href="<%= site.newUrl %>"><%= site.newDomain %></a>
+          </p>
+          <span class="piece" aria-hidden="true">♟</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
