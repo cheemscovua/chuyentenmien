@@ -2,13 +2,13 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3002;
 const HOST = process.env.HOST || '0.0.0.0';
 
 const site = {
-  oldDomain: 'covua.online',
-  newDomain: 'covualogic.vn',
-  newUrl: 'https://covualogic.vn',
+  oldDomain: 'hoccovua.edu.vn',
+  newDomain: 'hoccovua.online',
+  newUrl: 'https://hoccovua.online',
   teacher: 'Thầy Toàn'
 };
 

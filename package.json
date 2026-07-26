@@ -1,7 +1,7 @@
 {
-  "name": "covua-online-moved-notice",
+  "name": "hoccovua-online-moved-notice",
   "version": "1.0.0",
-  "description": "Trang thong bao covua.online chuyen sang covualogic.vn.",
+  "description": "Trang thong bao hoccovua.edu.vn chuyen sang hoccovua.online.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
